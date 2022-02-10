@@ -34,4 +34,3 @@ class ArticleScope(models.Model):
     article = models.ForeignKey(Article, on_delete=models.CASCADE, related_name='scopes')
     tag = models.ForeignKey(Scope, on_delete=models.CASCADE, related_name='tags')
     is_main = models.BooleanField(default=False)
-
